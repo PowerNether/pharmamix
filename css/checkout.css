@@ -1,0 +1,235 @@
+.checkout {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkout .checkout-form__auth, .checkout .checkout-form__notAuth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkout .checkout-form__auth .SumoSelect, .checkout .checkout-form__notAuth .SumoSelect {
+  margin-bottom: 15px;
+}
+
+.checkout .checkout-form__auth .registration-block__selections, .checkout .checkout-form__notAuth .registration-block__selections {
+  width: 100%;
+  margin: 15px 0 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkout .checkout-form__auth .registration-block__selections .SumoSelect, .checkout .checkout-form__notAuth .registration-block__selections .SumoSelect {
+  max-width: 95px;
+  margin: 0;
+}
+
+.checkout .checkout-form__auth .registration-block__selections .SumoSelect .CaptionCont span, .checkout .checkout-form__notAuth .registration-block__selections .SumoSelect .CaptionCont span {
+  padding: 0 !important;
+}
+
+.checkout .checkout-form__auth .registration-block__selections .SumoSelect:first-of-type, .checkout .checkout-form__auth .registration-block__selections .SumoSelect:last-of-type, .checkout .checkout-form__notAuth .registration-block__selections .SumoSelect:first-of-type, .checkout .checkout-form__notAuth .registration-block__selections .SumoSelect:last-of-type {
+  max-width: 93px;
+}
+
+.checkout .checkout-form__auth .registration-block__selections .placeholder, .checkout .checkout-form__auth .registration-block__selections .CaptionCont, .checkout .checkout-form__auth .registration-block__selections .opt, .checkout .checkout-form__notAuth .registration-block__selections .placeholder, .checkout .checkout-form__notAuth .registration-block__selections .CaptionCont, .checkout .checkout-form__notAuth .registration-block__selections .opt {
+  font-size: 10px !important;
+}
+
+.checkout .checkout-form__auth .input, .checkout .checkout-form__notAuth .input {
+  margin-bottom: 15px;
+}
+
+.checkout .checkout-form__auth .auth-text, .checkout .checkout-form__notAuth .auth-text {
+  margin-bottom: 15px;
+}
+
+.checkout .checkout-form__auth .auth-text__title, .checkout .checkout-form__notAuth .auth-text__title {
+  margin-top: 10px;
+}
+
+.checkout .checkout-form__auth a, .checkout .checkout-form__notAuth a {
+  text-align: center;
+}
+
+.checkout .checkout-form__auth a .btn, .checkout .checkout-form__notAuth a .btn {
+  margin-top: 25px;
+}
+
+.checkout .checkout-form__auth .checkout-form__cycle, .checkout .checkout-form__notAuth .checkout-form__cycle {
+  position: relative;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout .checkout-form__auth .checkout-form__cycle .payment__label:before, .checkout .checkout-form__notAuth .checkout-form__cycle .payment__label:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  border: 1px solid #48B6FF;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.checkout .checkout-form__auth .checkout-form__cycle .payment__label:after, .checkout .checkout-form__notAuth .checkout-form__cycle .payment__label:after {
+  visibility: hidden;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background: #48B6FF;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.checkout .checkout-form__auth .checkout-form__cycle .payment__label, .checkout .checkout-form__notAuth .checkout-form__cycle .payment__label {
+  font-weight: bold;
+  font-size: calc(8px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920));
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9398AA;
+  padding-left: 35px;
+  position: relative;
+}
+
+.checkout .checkout-form__auth .checkout-form__cycle input, .checkout .checkout-form__notAuth .checkout-form__cycle input {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -4px;
+  z-index: 2;
+}
+
+.checkout .checkout-form__auth .checkout-form__cycle input:focus, .checkout .checkout-form__notAuth .checkout-form__cycle input:focus {
+  outline: none;
+}
+
+.checkout .checkout-form__auth .checkout-form__cycle input:checked + .payment__label:after, .checkout .checkout-form__notAuth .checkout-form__cycle input:checked + .payment__label:after {
+  visibility: visible;
+}
+
+.checkout .checkout-form__auth .checkout-form__checkbox, .checkout .checkout-form__notAuth .checkout-form__checkbox {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.checkout .checkout-form__auth .checkout-form__checkbox input, .checkout .checkout-form__notAuth .checkout-form__checkbox input {
+  margin: 0;
+  margin-right: 12px;
+  z-index: 1;
+  min-width: 20px;
+  min-height: 20px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.checkout .checkout-form__auth .checkout-form__checkbox input:focus, .checkout .checkout-form__notAuth .checkout-form__checkbox input:focus {
+  outline: none;
+}
+
+.checkout .checkout-form__auth .checkout-form__checkbox label, .checkout .checkout-form__notAuth .checkout-form__checkbox label {
+  padding-left: 35px;
+  font-size: 8px;
+  line-height: 14px;
+  color: #000000;
+  position: relative;
+}
+
+.checkout .checkout-form__auth .checkout-form__checkbox label:before, .checkout .checkout-form__notAuth .checkout-form__checkbox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  border: 1px solid #48B6FF;
+  width: 20px;
+  height: 20px;
+  z-index: -1;
+}
+
+.checkout .checkout-form__auth .checkout-form__checkbox label:after, .checkout .checkout-form__notAuth .checkout-form__checkbox label:after {
+  visibility: hidden;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 2px solid #48B6FF;
+  border-bottom: 2px solid #48B6FF;
+  width: 8px;
+  height: 5px;
+  margin: 7px 6px;
+  z-index: -1;
+  -webkit-transform: scale(0) rotate(-45deg);
+          transform: scale(0) rotate(-45deg);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.checkout .checkout-form__auth .checkout-form__checkbox input:checked + label:after, .checkout .checkout-form__notAuth .checkout-form__checkbox input:checked + label:after {
+  visibility: visible;
+  -webkit-transform: scale(1) rotate(-45deg);
+          transform: scale(1) rotate(-45deg);
+}
+
+.checkout__post {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkout__post .auth-block {
+  text-align: center;
+}
+
+.checkout__post .auth-block .btn {
+  margin-top: 32px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Авторизация</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__header">
+        <div class="wrapper">
+          <div class="page-header__logo">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="login">
+      <div class="wrapper">
+        <div class="auth-block">
+          <h2 class="auth-title">Вход в аккаунт</h2>
+          <form class="login-block__form">
+            <input
+              type="email"
+              class="input"
+              placeholder="EMAIL АДРЕС"
+              autocomplete="email"
+              id="mail"
+              required
+            />
+            <input
+              type="password"
+              class="input"
+              placeholder="ПАРОЛЬ"
+              autocomplete="current-password"
+              required
+              id="current-password"
+            />
+            <p class="login-block__reset">
+              Забыли пароль?
+              <a href="./reset.html" class="auth-link">Восстановить</a>
+            </p>
+            <button class="btn">Войти в аккаунт</button>
+          </form>
+          <div class="auth-subtext">
+            <p class="auth-subtext__text">
+              Нет аккаунта?
+              <a href="./registration.html" class="auth-link"
+                >Зарегистрироваться</a
+              >
+            </p>
+            <p class="auth-subtext__text">
+              Еще не купили тест?
+              <a href="./checkout.html" class="auth-link">Купить тест</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.sumoselect.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

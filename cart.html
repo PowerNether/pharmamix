@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <header class="page-header lk">
+      <div class="page-header__header">
+        <div class="wrapper">
+          <div class="page-header__logo">
+            <img src="./img/logo.png" alt="logo" />
+            <p>Личный кабинет</p>
+          </div>
+          <div class="page-header__profile">
+            <a href="./cart.html">
+              <img src="./icons/cart.svg" alt="cart" class="cart-icon" />
+            </a>
+            <img src="./img/profile.png" alt="avatar" />
+            <p class="page-header__user">Фамилия А. А.</p>
+            <a href="#" class="auth-link">ВЫЙТИ</a>
+          </div>
+          <img
+            src="./icons/menu-toggler.svg"
+            alt=""
+            class="page-header__toggler"
+          />
+        </div>
+      </div>
+      <div class="wrapper">
+        <h2 class="page-header__title">Ваша корзина</h2>
+      </div>
+    </header>
+    <section class="cart">
+      <div class="cart-content hidden">
+        <div class="wrapper">
+          <h2 class="title">Ваша корзина</h2>
+          <div class="cart-content__product">
+            <img
+              src="./img/BOX-PACKAGING.png"
+              alt="product-image"
+              class="cart-content__image"
+            />
+            <div class="cart-content__desc">
+              <h3 class="cart-content__title">Метаболомный тест</h3>
+              <h3 class="cart-content__text">
+                аДетальное исследование физиологического состояния вашего
+                организма
+              </h3>
+            </div>
+            <div class="cart-content__amounts">
+              <p class="cart-content__minus">-</p>
+              <p class="cart-content__amount">1</p>
+              <p class="cart-content__plus">+</p>
+            </div>
+            <div class="cart-content__prices">
+              <p class="cart-content__price">2 990 ₽</p>
+              <p class="cart-content__sale"><span>3 990</span>₽</p>
+            </div>
+            <div class="cart-content__delete">
+              <img
+                src="./icons/backet.svg"
+                alt="delete"
+                class="cart-content__basket"
+              />
+            </div>
+          </div>
+          <div class="cart-content__promocode">
+            <p class="cart-content__promocode-title">Промокод</p>
+            <input type="text" class="input" placeholder="Введите промокод" />
+            <button class="btn">Применить</button>
+            <p class="cart-content__promocode-alert valid hidden">
+              Промокод активирован Скидка - 10%
+            </p>
+            <p class="cart-content__promocode-alert invalid hidden">
+              неверный промокод
+            </p>
+          </div>
+          <p class="cart-content__total">Итого 2 990 ₽</p>
+          <p class="cart-content__total mobile">Итого</p>
+          <p class="cart-content__total mobile">2 990 ₽</p>
+          <div class="cart-content__auth-valid hidden">
+            <button class="btn">Оформить заказ</button>
+          </div>
+          <div class="cart-content__auth-invalid">
+            <button class="btn">Создать аккаунт и оформить заказ</button>
+            <p class="auth-subtext__text">
+              Уже есть аккаунт?
+              <a href="./login.html" class="auth-link">Войти</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cart-content-clear">
+        <div class="wrapper">
+          <h2 class="title">В вашей корзине пока пусто</h2>
+          <div class="product-full">
+            <h3 class="product-full__title">Метаболомный тест</h3>
+            <p class="product-full__desc">
+              Детальное исследование физиологического состояния вашего организма
+            </p>
+            <a href="./lk.html"> <button class="btn">Заказать</button></a>
+          </div>
+          <div class="products">
+            <div class="product-mini test">
+              <h3 class="product-mini__title">Метаболомный тест</h3>
+              <p class="product-mini__desc">Описание и принцип работы</p>
+              <button class="btn">Подробнее</button>
+            </div>
+            <div class="product-mini chat">
+              <h3 class="product-mini__title">Чат</h3>
+              <h3 class="product-mini__title">с менеджером</h3>
+              <button class="btn">Перейти в чат</button>
+            </div>
+            <div class="product-mini contacts">
+              <h3 class="product-mini__title">Контакты</h3>
+              <p class="product-mini__text">Телефон</p>
+              <a href="tel:+79253225520" class="product-mini__link">
+                +7 (925) 322 55 20
+              </a>
+              <a href="#">
+                <img src="./icons/instagram.svg" alt="instagram" />
+              </a>
+              <a href="#">
+                <img src="./icons/facebook.svg" alt="facebook" />
+              </a>
+              <a href="#">
+                <img src="./icons//vk.svg" alt="vk" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="footer-column">
+          <div class="footer-column__logo">
+            <img src="./img/logo.png" alt="logo" />
+            <p>© Все права защищены 2020</p>
+          </div>
+          <div class="footer-column__lang">
+            <div class="lang">
+              <img
+                src="./img/russia.png"
+                alt="russua"
+                class="footer-column__image"
+              />
+              <p>RU</p>
+              <img
+                src="./icons/charon-bottom.svg"
+                alt="down"
+                class="footer-column__icon"
+              />
+            </div>
+            <p>Политика конфиденциальности</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <img src="./icons/instagram.svg" alt="instagram" class="icon" />
+          <img src="./icons/facebook.svg" alt="facebook" class="icon" />
+          <img src="./icons/vk.svg" alt="vk" class="icon" />
+        </div>
+        <div class="footer-column">
+          <p class="footer-column__street">
+            Россия, Москва, Улица пушкина дом 23с1
+            <a href="tel:+79253225520">+7 (925) 322 55 20</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.sumoselect.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

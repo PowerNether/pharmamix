@@ -1,0 +1,455 @@
+
+$f12-8: calc(8px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920))
+$f13-8: calc(8px + (5 + 5 * 0.7) * ((100vw - 320px) / 1920))
+$f14-10: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920))
+$f16-10: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920))
+$f24-18: calc(18px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920))
+$f40-18: calc(18px + (22 + 22 * 0.7) * ((100vw - 320px) / 1920))
+$f40-20: calc(20px + (20 + 20 * 0.7) * ((100vw - 320px) / 1920))
+.lk
+    width: 100%
+    .lk-content
+        margin: 80px 0 100px
+    .lk-reg-test__post
+        .product-full
+            background: url(./../img/Box-Mockups-1.png) no-repeat top right, #F3F4FB
+    .lk-reg-test__form
+        .auth-block
+            display: flex
+            flex-direction: column
+        .input
+            margin-bottom: 15px
+        .auth-text
+            margin: 10px 0 15px
+        .SumoSelect
+            margin-bottom: 15px
+        .lk-reg-test__selections
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 15px
+            .SumoSelect
+                max-width: 100px
+                margin: 0
+                .CaptionCont
+                    span
+                        padding: 0 !important
+                .SumoSelect:first-of-type, .SumoSelect:last-of-type
+                    max-width: 93px
+                .placeholder, .CaptionCont, .opt
+                    font-size: $f12-8 !important
+        .lk-reg-test__wrapper
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .input
+                max-width: 148px
+        textarea.input
+            line-height: 100%
+            height: 120px
+            padding: 15px 10px 15px 25px
+            resize: none
+        .lk-reg-test__pregnancy
+            position: relative
+            margin-bottom: 25px
+            .pregnancy__label:before
+                content: ""
+                position: absolute
+                left: -35px
+                width: 20px
+                height: 20px
+                border: 1px solid #E61C95
+                border-radius: 50%
+                z-index: -1
+            .pregnancy__label:after
+                visibility: hidden
+                content: ""
+                position: absolute
+                top: 1px
+                left: -32px
+                width: 14px
+                height: 14px
+                background: #E61C95
+                border-radius: 50%
+                z-index: 3
+            .pregnancy__label
+                font-weight: bold
+                font-size: $f12-8
+                line-height: 106.65%
+                letter-spacing: 0.08em
+                text-transform: uppercase
+                color: #9398AA
+                margin-left: 35px
+                position: relative
+            .pregnancy__label:last-of-type
+                margin-left: 65px
+            input
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                position: absolute
+                top: 0
+                z-index: 2
+                &:focus
+                    outline: none
+            .second
+                left: 90px
+            input:checked + .pregnancy__label:after
+                visibility: visible
+        .lk-reg-test__cycle
+            display: flex
+            flex-direction: column
+            position: relative
+            .cycle__label:before
+                content: ""
+                position: absolute
+                left: -35px
+                top: -5px
+                width: 20px
+                height: 20px
+                border: 1px solid #E61C95
+                border-radius: 50%
+                z-index: -1
+            .cycle__label:after
+                visibility: hidden
+                content: ""
+                position: absolute
+                top: -2px
+                left: -32px
+                width: 14px
+                height: 14px
+                background: #E61C95
+                border-radius: 50%
+                z-index: 3
+            .cycle__label
+                font-weight: bold
+                font-size: $f12-8
+                line-height: 106.65%
+                letter-spacing: 0.08em
+                text-transform: uppercase
+                color: #9398AA
+                margin-left: 35px
+                margin-bottom: 20px
+                position: relative
+            input
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                position: absolute
+                left: -4px
+                z-index: 2
+                &:focus
+                    outline: none
+            input.first
+                top: -6px
+            input.second
+                top: 24px
+            input.third
+                top: 54px
+            input:checked + .cycle__label:after
+                visibility: visible
+        div.auth-text__point
+            display: flex
+            align-items: flex-start
+            span
+                max-height: 27px
+            p
+                max-width: 200px
+        .lk-reg-test__suggest
+            position: relative
+            display: flex
+            flex-direction: column
+            margin-bottom: 15px
+            input
+                margin: 0
+                margin-right: 12px
+                z-index: 1
+                min-width: 20px
+                min-height: 20px
+                cursor: pointer
+                position: absolute
+                &:focus
+                    border: 1px solid #000000
+                    border-radius: 4px
+                    outline: none
+            label
+                padding-left: 35px
+                font-size: $f12-8
+                line-height: 18px
+                color: #000000
+                position: relative
+            label:before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                border-radius: 4px
+                border: 1px solid #48B6FF
+                width: 20px
+                height: 20px
+                z-index: -1
+            label:after
+                visibility: hidden
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                border-left: 2px solid #48B6FF
+                border-bottom: 2px solid #48B6FF
+                width: 8px
+                height: 5px
+                margin: 7px 6px
+                z-index: -1
+                transform: scale(0) rotate(-45deg)
+                transition: all .5s
+            input:checked + label:after
+                visibility: visible
+                transform: scale(1) rotate(-45deg)
+        a
+            text-align: center
+            .btn
+                height: 60px
+                max-width: 230px
+                line-height: 12px
+                margin: 25px auto
+        .auth-text:last-of-type
+            text-align: center
+    .lk-reg-test
+        .product-full
+            display: flex
+            align-items: center
+            background: url(./../img/Box-Mockups-1.png) no-repeat top right, #F3F4FB
+            .product-full__column
+                width: 100%
+                display: flex
+                align-items: center
+                flex-direction: column
+                .product-full__title
+                    font-weight: 300
+                    font-size: $f24-18
+                    line-height: 64px
+                    color: #505B65
+                .product-full__desc
+                    font-weight: bold
+                    font-size: $f13-8
+                    line-height: 22px
+                    letter-spacing: 0.07em
+                    text-transform: uppercase
+                    color: #505B65
+                    max-width: 356px
+                img
+                    max-width: 358px
+                .input
+                    max-width: 360px
+                    margin: 10px 0 26px
+                    background: unset
+            .product-full__column:first-of-type
+                width: 100%
+                display: flex
+                align-items: flex-start
+                flex-direction: column
+    .lk-my-tests
+        .lk-my-tests__row
+            display: flex
+            align-items: center
+            .lk-my-tests__colums
+                width: 100%
+                .lk-my-tests__image
+                    max-width: 510px
+                    padding-left: 50px
+                    width: 100%
+                .lk-my-tests__list
+                    max-width: 715px
+                    .lk-my-tests__item
+                        background: #FFFFFF
+                        border: 2px solid #F3F4FB
+                        border-radius: 10px
+                        display: flex
+                        align-items: center
+                        padding: 15px 25px
+                        margin-bottom: 15px
+                        .lk-my-tests__number
+                            width: 60%
+                            font-weight: bold
+                            font-size: $f13-8
+                            line-height: 16px
+                            letter-spacing: 0.07em
+                            text-transform: uppercase
+                            color: #9398AA
+                        .lk-my-tests__status
+                            width: 40%
+                            font-weight: bold
+                            font-size: $f13-8
+                            line-height: 16px
+                            letter-spacing: 0.07em
+                            text-transform: uppercase
+                            color: #15B007
+                    .head
+                        background: #F3F4FB
+                        .lk-my-tests__number
+                            color: #A1A7B0
+                        .lk-my-tests__status
+                            color: #A1A7B0
+    .lk-history
+        .lk-history__list
+            max-width: 100%
+            margin-top: 40px
+            .lk-history__item
+                background: #FFFFFF
+                border: 2px solid #F3F4FB
+                border-radius: 10px
+                display: flex
+                align-items: center
+                padding: 15px 25px
+                margin-bottom: 15px
+                .lk-history__date
+                    width: 45%
+                    font-weight: bold
+                    font-size: $f13-8
+                    line-height: 16px
+                    letter-spacing: 0.07em
+                    text-transform: uppercase
+                    color: #9398AA
+                .lk-history__status
+                    width: 35%
+                    font-weight: bold
+                    font-size: $f13-8
+                    line-height: 16px
+                    letter-spacing: 0.07em
+                    text-transform: uppercase
+                .lk-history__number
+                    width: 20%
+                    font-weight: bold
+                    font-size: $f13-8
+                    line-height: 16px
+                    letter-spacing: 0.07em
+                    text-transform: uppercase
+                    color: #9398AA
+                .preparing
+                    color: #9398AA
+                .transit
+                    color: #48B6FF
+                .delivered
+                    color: #15B007
+            .head
+                background: #F3F4FB
+                .lk-history__date
+                    color: #A1A7B0
+                .lk-history__number
+                    color: #A1A7B0
+                .lk-history__status
+                    color: #A1A7B0
+    .lk-block__list
+        .lk-block
+            border: 1px solid rgba(147, 152, 170, 0.3)
+            box-sizing: border-box
+            border-radius: 10px
+            padding: 50px 0 60px 80px
+            margin-top: 40px
+            .lk-block__title
+                font-weight: 300
+                font-size: $f24-18
+                line-height: 64px
+                margin-bottom: 10px
+                color: #505B65
+            .lk-block__list
+                .lk-block__item
+                    display: flex
+                    align-items: center
+                    margin-top: 15px
+                    position: relative
+                    .lk-block__text
+                        font-weight: bold
+                        font-size: $f12-8
+                        line-height: 22px
+                        max-width: 130px
+                        width: 100%
+                        letter-spacing: 0.08em
+                        text-transform: uppercase
+                        color: #9398AA
+                    .input
+                        max-width: 310px
+                        width: 100%
+                        margin: 0 36px 0 12px
+                    .lk-block__edit
+                        font-weight: bold
+                        font-size: $f12-8
+                        line-height: 106.65%
+                        letter-spacing: 0.08em
+                        text-transform: uppercase
+                        color: #48B6FF
+                        z-index: 0
+                        cursor: pointer
+                        position: relative
+                    .lk-block__profile
+                        width: 68px
+                        height: 68px
+                        margin-right: 36px
+                    .lk-block__file
+                        border: 1px solid #000000
+                        position: absolute
+                        z-index: 1
+                        max-width: 180px
+                        cursor: pointer
+                        opacity: 0
+                        left: 0
+                        top: 0
+                    .SumoSelect
+                        margin: 0 36px 0 12px
+                        max-width: 310px
+                        width: 100%
+                    .lk-block__selections
+                        margin: 0 36px 0 12px
+                        max-width: 310px
+                        width: 100%
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        .SumoSelect
+                            max-width: 100px
+                            margin: 0
+                            .CaptionCont
+                                span
+                                    padding: 0 !important
+                        .SumoSelect:first-of-type, .SumoSelect:last-of-type
+                            max-width: 93px
+                        .placeholder, .CaptionCont, .opt
+                            font-size: $f12-8 !important
+    .lk-support
+        .lk-support__title
+            font-weight: 300
+            font-size: $f40-18
+            line-height: 54px
+            color: #505B65
+            margin: 45px 0 30px
+        .lk-support__list
+            .lk-support__item
+                .lk-support__head
+                    background: #FFFFFF
+                    border: 1px solid #DFE0E5
+                    box-sizing: border-box
+                    border-radius: 10px
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    padding: 35px 55px 35px 80px
+                    margin-bottom: 5px
+                    .lk-support__head-title
+                        font-size: $f16-10
+                        line-height: 28px
+                        color: #000000
+                    .lk-support__head-image
+                        transform: (rotate(180deg))
+                        transition: all .5s
+                    .active
+                        transform: (rotate(0deg))
+                .lk-support__body
+                    background: #F3F4FB
+                    border-radius: 10px
+                    padding: 35px 55px
+                    margin-bottom: 5px
+                    display: none
+                    .lk-support__body-text
+                        font-size: $f16-10
+                        line-height: 28px
+                        color: #000000

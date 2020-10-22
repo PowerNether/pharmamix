@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Восстановление пароля</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__header">
+        <div class="wrapper">
+          <div class="page-header__logo">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="reset">
+      <div class="wrapper">
+        <div class="auth-block">
+          <h2 class="auth-title">Восстановление пароля</h2>
+          <p class="auth-text">
+            Введите адрес электронной почты, связанный с вашей учетной записью,
+            и мы отправим вам электронное письмо с инструкциями и ссылкой для
+            создания нового пароля.
+          </p>
+          <form action="" class="reset-block__form">
+            <input type="email" class="input" placeholder="EMAIL" id="mail" required/>
+            <button class="btn">Отправить электронное письмо</button>
+          </form>
+          <a href="./login.html" class="auth-link">Войти в свой аккаунт</a>
+        </div>
+      </div>
+    </section>
+    <section class="reset-post hidden">
+      <div class="wrapper">
+        <div class="auth-block">
+          <h2 class="auth-title">Восстановление пароля</h2>
+          <p class="auth-subtitle">
+            Инструкции по сбросу пароля были отправлены вам на
+            <span>oleg@mail.ru</span>.
+          </p>
+          <p class="auth-text">
+            Следуйте инструкциям в письме, чтобы создать новый пароль.
+          </p>
+          <p class="auth-text">
+            В целях безопасности ссылка будет действительна только 3 дня.
+          </p>
+          <p class="auth-text">
+            Для получения ответов на дополнительные вопросов посетите эту
+            страницу.
+          </p>
+          <a href="./login.html" class="auth-link">Войти в свой аккаунт</a>
+        </div>
+      </div>
+    </section>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.sumoselect.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

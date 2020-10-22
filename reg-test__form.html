@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/sumoselect.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Личный Кабинет</title>
+  </head>
+  <body>
+    <header class="page-header lk">
+      <div class="page-header__header">
+        <div class="wrapper">
+          <div class="page-header__logo">
+            <img src="./img/logo.png" alt="logo" />
+            <p>Личный кабинет</p>
+          </div>
+          <div class="page-header__profile">
+            <a href="./cart.html">
+              <img src="./icons/cart.svg" alt="cart" class="cart-icon" />
+            </a>
+            <img src="./img/profile.png" alt="avatar" />
+            <p class="page-header__user">Фамилия А. А.</p>
+            <a href="#" class="auth-link">ВЫЙТИ</a>
+          </div>
+          <img
+            src="./icons/menu-toggler.svg"
+            alt=""
+            class="page-header__toggler"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="lk">
+      <div class="lk-content lk-reg-test__form">
+        <div class="wrapper">
+          <form class="auth-block">
+            <h2 class="auth-title">Регистрация теста</h2>
+            <p class="auth-text__point">
+              <span>1</span>
+              Персональная информация донора
+            </p>
+            <input type="text" class="input" placeholder="Фамилия" required />
+            <input type="text" class="input" placeholder="ИМЯ" required />
+            <input type="text" class="input" placeholder="Отчество" />
+            <p class="auth-text">Адрес</p>
+            <input type="text" class="input" placeholder="Страна" required />
+            <input type="text" class="input" placeholder="Область" />
+            <input type="text" class="input" placeholder="город" required />
+            <input
+              type="text"
+              class="input"
+              placeholder="ПОЧТОВЫЙ ИНДЕКС"
+              required
+            />
+            <input type="text" class="input" placeholder="УЛИЦА" required />
+            <input type="text" class="input" placeholder="ДОМ" required />
+            <input type="text" class="input" placeholder="КОРПУС" />
+            <input type="text" class="input" placeholder="Стоение" />
+            <input type="text" class="input" placeholder="КВАРТИРА" required />
+            <input type="text" class="input" placeholder="ЭТАЖ" required />
+            <input type="text" class="input" placeholder="ДОМОФОН" />
+            <p class="auth-text">Контактные данные</p>
+            <input type="email" class="input" placeholder="EMAIL" required />
+            <input type="tel" class="input" placeholder="Телефон" required />
+            <p class="auth-text">Выберите пол</p>
+            <select name="gender" class="select" required>
+              <option value="placeholder" disabled selected>
+                ВЫБЕРИТЕ ПОЛ
+              </option>
+              <option value="male">Мужчина</option>
+              <option value="female">Женщина</option>
+            </select>
+            <p class="auth-text">Дата рождения</p>
+            <div class="lk-reg-test__selections">
+              <select name="day" class="select" required>
+                <option value="placeholder" disabled selected>День</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select name="month" class="select" required>
+                <option value="placeholder" disabled selected>Месяц</option>
+                <option value="January">Январь</option>
+                <option value="February">Февраль</option>
+                <option value="March">Март</option>
+                <option value="April">Апрель</option>
+                <option value="May">Май</option>
+                <option value="June">Июнь</option>
+                <option value="July">Июль</option>
+                <option value="August">Август</option>
+                <option value="September">Сентябрь</option>
+                <option value="October">Октябрь</option>
+                <option value="November">Ноябрь</option>
+                <option value="December">Декабрь</option>
+              </select>
+              <select name="year" class="select" required>
+                <option value="placeholder" disabled selected>Год</option>
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+                <option value="1986">1986</option>
+                <option value="1987">1987</option>
+                <option value="1988">1988</option>
+                <option value="1989">1989</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+              </select>
+            </div>
+            <div class="lk-reg-test__wrapper" required>
+              <input type="text" class="input" placeholder="ВЕС в КГ." />
+              <input type="text" class="input" placeholder="РОСТ в СМ." />
+            </div>
+            <p class="auth-text__point">
+              <span>2</span>
+              Информация по донору крови
+            </p>
+            <p class="auth-text">
+              Укажите, какие лекарства Вы принимали в течение недели до забора
+              крови:
+            </p>
+            <textarea class="input"></textarea>
+            <p class="auth-text">
+              Укажите, все Ваши заболевания (не забудте эндокринные и
+              метаболические болезни):
+            </p>
+            <textarea class="input"></textarea>
+            <p class="auth-text__point female">
+              <span>2.1</span>
+              Для женщин
+            </p>
+            <p class="auth-subtitle">
+              Если вы мужчина, просто пропустите следующие 5 пунктов и
+              переходите к блоку 2.2.
+            </p>
+            <p class="auth-text">Наличие текущей беременности:</p>
+            <div class="lk-reg-test__pregnancy">
+              <input name="pregnancy" type="radio" checked />
+              <label class="pregnancy__label" for="pregnancy"> Нет </label>
+              <input name="pregnancy" type="radio" class="second" />
+              <label class="pregnancy__label" for="pregnancy"> Да </label>
+            </div>
+            <p class="auth-text">Тип менструального цикла</p>
+            <div class="lk-reg-test__cycle">
+              <input name="cycle" class="first" type="radio" />
+              <label class="cycle__label" for="cycle"> Регулярный </label>
+              <input name="cycle" class="second" type="radio" />
+              <label class="cycle__label" for="pregnancy"> Нерегулярный </label>
+              <input name="cycle" class="third" type="radio" checked />
+              <label class="cycle__label" for="cycle"> Аменорея </label>
+            </div>
+            <p class="auth-text__point">
+              <span>2.2</span>
+              Информация по донору крови
+            </p>
+            <p class="auth-text">
+              Перенесенные Вами операции (важно указать операции, связанные с
+              удалением органов или их частей)
+            </p>
+            <textarea class="input"></textarea>
+            <p class="auth-text">
+              Связана ли ваша работа или образ жизни с контактом с химическими
+              веществами?
+            </p>
+            <div class="lk-reg-test__pregnancy gender">
+              <input name="chem" type="radio" />
+              <label class="pregnancy__label" for="chem" required> Нет </label>
+              <input name="chem" type="radio" class="second" />
+              <label class="pregnancy__label" for="chem" required> Да </label>
+            </div>
+            <input
+              type="text"
+              class="input"
+              placeholder="ЕСЛИ ДА, УКАЗАТЬ КАКИМИ"
+            />
+            <p class="auth-text">
+              Связана ли ваша работа или образ жизни с радиационным или иным
+              облучением?
+            </p>
+            <div class="lk-reg-test__pregnancy gender">
+              <input name="radiation" type="radio" />
+              <label class="pregnancy__label" for="radiation" required>
+                Нет
+              </label>
+              <input name="radiation" type="radio" class="second" />
+              <label class="pregnancy__label" for="radiation" required>
+                Да
+              </label>
+            </div>
+            <input
+              type="text"
+              class="input"
+              placeholder="ЕСЛИ ДА, УКАЗАТЬ КАКИМИ"
+            />
+            <p class="auth-text">
+              Связана ли ваша работа или образ жизни с иным, вредным
+              воздействием?
+            </p>
+            <div class="lk-reg-test__pregnancy gender">
+              <input name="impact" type="radio" />
+              <label class="pregnancy__label" for="impact" required>
+                Нет
+              </label>
+              <input name="impact" type="radio" class="second" />
+              <label class="pregnancy__label" for="impact" required> Да </label>
+            </div>
+            <input
+              type="text"
+              class="input"
+              placeholder="ЕСЛИ ДА, УКАЗАТЬ КАКИМИ"
+            />
+            <p class="auth-text">
+              Проживаете ли Вы вблиза источника загрязнения воздуха? (крупные
+              дороги, фабрики)
+            </p>
+            <div class="lk-reg-test__pregnancy gender">
+              <input name="road" type="radio" />
+              <label class="pregnancy__label" for="road" required> Нет </label>
+              <input name="road" type="radio" class="second" />
+              <label class="pregnancy__label" for="road" required> Да </label>
+            </div>
+            <textarea class="input"></textarea>
+            <p class="auth-text__point">
+              <span>3</span>
+              Дата и время забора образца крови
+            </p>
+            <p class="auth-text">Дата забора образца</p>
+            <div class="lk-reg-test__selections">
+              <select name="day" class="select" required>
+                <option value="placeholder" disabled selected>День</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select name="month" class="select" required>
+                <option value="placeholder" disabled selected>Месяц</option>
+                <option value="January">Январь</option>
+                <option value="February">Февраль</option>
+                <option value="March">Март</option>
+                <option value="April">Апрель</option>
+                <option value="May">Май</option>
+                <option value="June">Июнь</option>
+                <option value="July">Июль</option>
+                <option value="August">Август</option>
+                <option value="September">Сентябрь</option>
+                <option value="October">Октябрь</option>
+                <option value="November">Ноябрь</option>
+                <option value="December">Декабрь</option>
+              </select>
+              <select name="year" class="select" required>
+                <option value="placeholder" disabled selected>Год</option>
+                <option value="1981">2001</option>
+                <option value="1982">2002</option>
+                <option value="1983">2003</option>
+                <option value="1984">2004</option>
+                <option value="1985">2005</option>
+                <option value="1986">2006</option>
+                <option value="1987">2007</option>
+                <option value="1988">2008</option>
+                <option value="1989">2009</option>
+                <option value="1991">2010</option>
+                <option value="1992">2011</option>
+                <option value="1993">2012</option>
+                <option value="1994">2013</option>
+                <option value="1995">2014</option>
+                <option value="1996">2015</option>
+                <option value="1997">2016</option>
+                <option value="1998">2017</option>
+                <option value="1999">2018</option>
+                <option value="2001">2019</option>
+                <option value="2002">2020</option>
+              </select>
+            </div>
+            <p class="auth-text">Время забора образца (24 ч.)</p>
+            <div class="lk-reg-test__wrapper">
+              <input type="text" class="input" placeholder="Часы" required />
+              <input type="text" class="input" placeholder="Минуты" required />
+            </div>
+            <div class="auth-text__point">
+              <span>4</span>
+              <p>Информированное согласие и декларация</p>
+            </div>
+            <p class="auth-text">Даю согласие на:</p>
+            <div class="lk-reg-test__suggest">
+              <input type="checkbox" name="suggest" checked required />
+              <label for="suggest">
+                Использование образца крови в научных целях;
+              </label>
+            </div>
+            <div class="lk-reg-test__suggest">
+              <input type="checkbox" name="suggest" checked required />
+              <label for="suggest">
+                Сбор и хранение моих персональных данных;
+              </label>
+            </div>
+            <div class="lk-reg-test__suggest">
+              <input type="checkbox" name="suggest" checked required />
+              <label for="suggest">
+                Публикацию научных данных, включающих мои метаболомные днных
+                крови, без указания моих персональных данных
+              </label>
+            </div>
+            <a href="./reg-test__form-post.html">
+              <button class="btn">
+                Зарегистрировать тест и вызвать курьера
+              </button>
+            </a>
+            <p class="auth-text">
+              Нажимая кнопку «Зарегистрировать тест и вызвать курьера» я
+              декларирую, что проинформирован(а) и полностью осознаю, что
+              метаболомный тест крови является научным исследованием, а не
+              клиническим анализом крови, и подлежит использованию в
+              соответствии с этим статусом
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="footer-column">
+          <div class="footer-column__logo">
+            <img src="./img/logo.png" alt="logo" />
+            <p>© Все права защищены 2020</p>
+          </div>
+          <div class="footer-column__lang">
+            <div class="lang">
+              <img
+                src="./img/russia.png"
+                alt="russua"
+                class="footer-column__image"
+              />
+              <p>RU</p>
+              <img
+                src="./icons/charon-bottom.svg"
+                alt="down"
+                class="footer-column__icon"
+              />
+            </div>
+            <p>Политика конфиденциальности</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <img src="./icons/instagram.svg" alt="instagram" class="icon" />
+          <img src="./icons/facebook.svg" alt="facebook" class="icon" />
+          <img src="./icons/vk.svg" alt="vk" class="icon" />
+        </div>
+        <div class="footer-column">
+          <p class="footer-column__street">
+            Россия, Москва, Улица пушкина дом 23с1
+            <a href="tel:+79253225520">+7 (925) 322 55 20</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.sumoselect.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

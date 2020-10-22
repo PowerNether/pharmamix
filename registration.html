@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sumoselect.min.css" />
+    <title>Создание аккаунта</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__header">
+        <div class="wrapper">
+          <div class="page-header__logo">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="registration">
+      <div class="wrapper">
+        <div class="auth-block">
+          <h2 class="auth-title">Создание аккаунта</h2>
+          <form action="" class="registration-block__form">
+            <input
+              type="text"
+              class="input"
+              placeholder="ФИО"
+              id="reg__username"
+              required
+            />
+            <input
+              type="email"
+              autocomplete="username"
+              class="input"
+              placeholder="EMAIL"
+              id="mail"
+            />
+            <input
+              type="tel"
+              class="input"
+              placeholder="ТЕЛЕФОН"
+              id="reg__telephone"
+              required
+            />
+            <input
+              type="password"
+              autocomplete="new-password"
+              class="input"
+              placeholder="ПРИДУМАЙТЕ ПАРОЛЬ"
+              id="reg__password"
+              required
+            />
+            <input
+              type="password"
+              autocomplete="new-password"
+              class="input"
+              placeholder="Введите пароль повторно"
+              id="reg__password"
+              required
+            />
+            <select name="gender" class="select" required>
+              <option value="placeholder" disabled selected>
+                ВЫБЕРИТЕ ПОЛ
+              </option>
+              <option value="male">Мужчина</option>
+              <option value="female">Женщина</option>
+            </select>
+            <p class="registration-block__subtitle">Дата рождения</p>
+            <div class="registration-block__selections">
+              <select name="day" class="select" required>
+                <option value="placeholder" disabled selected>День</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select name="month" class="select" required>
+                <option value="placeholder" disabled selected>Месяц</option>
+                <option value="January">Январь</option>
+                <option value="February">Февраль</option>
+                <option value="March">Март</option>
+                <option value="April">Апрель</option>
+                <option value="May">Май</option>
+                <option value="June">Июнь</option>
+                <option value="July">Июль</option>
+                <option value="August">Август</option>
+                <option value="September">Сентябрь</option>
+                <option value="October">Октябрь</option>
+                <option value="November">Ноябрь</option>
+                <option value="December">Декабрь</option>
+              </select>
+              <select name="year" class="select" required>
+                <option value="placeholder" disabled selected>Год</option>
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+                <option value="1986">1986</option>
+                <option value="1987">1987</option>
+                <option value="1988">1988</option>
+                <option value="1989">1989</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+              </select>
+            </div>
+            <div class="registration-block__checkbox">
+              <input type="checkbox" name="suggest" checked required />
+              <label for="suggest">
+                Ознакомлен и полностью принимаю
+                <a href="#">условия Публичной оферты</a>
+                <a href="#">условия Политики конфиденциальности</a> , и
+                <a href="#">обработки персональных данных</a> ,
+                <a href="#">
+                  даю согласие на обработку своих персональных данных
+                </a>
+                и получение информационных сообщений, связанных с оказанием
+                услуг.
+              </label>
+            </div>
+            <button class="btn">Создать аккаунт</button>
+          </form>
+          <div class="auth-subtext">
+            <p class="auth-subtext__text">
+              Уже есть аккаунт?
+              <a href="./login.html" class="auth-link">Войти</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="registration-post hidden">
+      <div class="wrapper">
+        <div class="auth-block">
+          <h2 class="auth-title">
+            Подтвердите <br />
+            Ваш электронный адрес
+          </h2>
+          <p class="auth-subtitle">
+            Мы только что отправили письмо на адрес <span>test@test.com</span>
+          </p>
+          <p class="auth-text">
+            Если вы не видите сообщение в своем почтовом ящике, убедитесь, что
+            указанный выше адрес электронной почты правильный, и проверьте папку
+            со спамом или нежелательной почтой.
+          </p>
+          <p class="auth-text">Это письмо отправлено с адреса pharmimex.com.</p>
+          <p class="auth-text">
+            Если вы хотите, чтобы мы повторно отправили электронное письмо,
+            <a href="#" class="auth-link">нажмите здесь</a>
+          </p>
+          <p class="auth-text">
+            По дополнительным вопросам обращайтесь
+            <a href="#" class="auth-link">в службу поддержки клиентов</a>.
+          </p>
+          <a class="registration-post__link" href="./login.html">
+            <button class="btn">Войти</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.sumoselect.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

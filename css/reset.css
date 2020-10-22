@@ -1,0 +1,61 @@
+.reset {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.reset .auth-title {
+  margin: 0 auto;
+  max-width: 200px;
+  margin-bottom: 35px;
+}
+
+.reset .auth-text {
+  text-align: left;
+}
+
+.reset .input {
+  margin-top: 15px;
+}
+
+.reset .btn {
+  margin: 24px 0;
+}
+
+.reset-post {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.reset-post .auth-block .auth-title {
+  margin: 0 auto;
+  max-width: 200px;
+  margin-bottom: 35px;
+}
+
+.reset-post .auth-block .auth-text, .reset-post .auth-block .auth-subtitle {
+  text-align: left;
+}
+
+.reset-post .auth-block .auth-text:last-of-type {
+  margin-bottom: 24px;
+}
