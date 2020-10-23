@@ -83,6 +83,10 @@ body, html {
   min-height: 100vh;
 }
 
+.login .wrapper .auth-block .auth-subtext .auth-subtext__text {
+  text-align: left;
+}
+
 .btn {
   font-family: 'Avenir Next Cyr';
   font-weight: bold;
